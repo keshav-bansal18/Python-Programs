@@ -1,0 +1,14 @@
+import math
+n=list(map(int,input().split(',')))
+q=[]
+for i in range(len(n)):
+  x=math.sqrt((2*50*n[i])/30)
+  y=round(x,0)
+  z=int(y)
+  q.append(z)
+for j in range(len(q)):
+  if j==len(q)-1:
+    print(q[j],end='')
+  else:
+    print(q[j],end=',')
+              
