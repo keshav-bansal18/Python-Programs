@@ -1,0 +1,8 @@
+a=input()
+s=a.replace(' ','')
+if s.isalnum():
+  print('NO')
+else:
+  print('YES')
+             
+
