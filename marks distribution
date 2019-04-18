@@ -1,0 +1,10 @@
+n,m=map(int,input().split())
+l=list(map(int,input().split()))
+l.sort()
+d=l[m-1]-l[0]
+a=n-m+1
+for  i in range(a):
+  if l[i+m-1]-l[i]<d:
+    d=l[i+m-1]-l[i]
+print(d,end='')
+    
